@@ -1,0 +1,14 @@
+%rysuje linia na lini
+x = 0: 0.1: 5*pi
+y=sin(x)
+
+[idx]=find(x>1 & x<3);
+y(idx)=0
+
+h1 = plot(x,y)
+hold on
+y_data=get(h1, 'ydata');
+y_data(idx)=NULL;
+
+h2 = plot(x(idx),y(idx));
+set(h2, 'marker', '*');

@@ -1,0 +1,17 @@
+%interactive mode
+5+2
+
+%creating vectors
+a=[2,3,4]; b=[5,6,7]
+
+%classic Cauchy's matrix multiplication
+a*b
+
+%element-vise matrix multiplication
+a.*b
+
+%displaying int values
+a=input('input value a')
+b=input('input value b')
+c=a+b;
+disp(['value of a+b=' num2str(c)])
